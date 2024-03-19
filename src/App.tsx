@@ -16,8 +16,9 @@ import './assets/css/style.css'
 
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Menu from './pages/Menu'
 import HomePage from './pages/HomePage'
+import Menu from './pages/Menu'
+import ContactUs from './pages/ContactUs'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />}></Route>
           <Route path='/menu' element={<Menu />}></Route>
+          <Route path='/contact-us' element={<ContactUs />}></Route>
         </Routes>
       </Router>
     </>
