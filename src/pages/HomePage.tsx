@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import MainBanner from '../components/MainBanner'
-import { Home2IconWrapper } from '../elements/JsonData'
-import { IMAGES } from '../constent/theme'
+import { Home2IconWrapper } from '../../public/JsonData'
+import { IMAGES } from '../constants/theme'
 import { useEffect } from 'react'
 
 const HomePage = () => {

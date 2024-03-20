@@ -29,8 +29,7 @@
     "react-simple-star-rating": "^5.1.7",
     "rsuite": "^5.46.1",
     "sass": "^1.69.5",
-    "swiper": "^11.0.5",
-    "vite": "^5.0.9"
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",
@@ -41,6 +40,7 @@
     "eslint": "^8.53.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vite": "^5.2.2"
   }
 }

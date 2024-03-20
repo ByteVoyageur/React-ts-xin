@@ -1,5 +1,5 @@
 import React from 'react'
-import { IMAGES } from '../constent/theme'
+import { IMAGES } from '../src/constants/theme'
 
 export const MainBannerArr = [
   {

@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { IMAGES } from '../constent/theme'
+import { IMAGES } from '../constants/theme'
 import CommonBanner from '../elements/CommonBanner'
 import { useContext, useRef, useState } from 'react'
-import { MenuStyle4Arr } from '../elements/JsonData'
+import { MenuStyle4Arr } from '../../public/JsonData'
+import OurMenuFilter from '../elements/OurMenuFilter'
 import { Context } from '../context/AppContext'
 
 const Buttons = [
@@ -23,7 +24,7 @@ interface MenuFile {
   price: string
 }
 
-const Menu = () => {
+const MenuStyle4 = () => {
   const [active, setActive] = useState<number>(0)
   const [hoverActive, setHoverActive] = useState<number>()
   const [data, setData] = useState<MenuFile[]>(MenuStyle4Arr)
@@ -57,8 +58,8 @@ const Menu = () => {
     <div className='page-content bg-white'>
       <CommonBanner
         img={IMAGES.images_bnr4}
-        title='Our Menu'
-        subtitle='Our Menu'
+        title='Our Menu 4'
+        subtitle='Our Menu 4'
       />
 
       <section className='content-inner'>
@@ -104,6 +105,7 @@ const Menu = () => {
                 </span>
               </Link>
             </div>
+            <OurMenuFilter />
           </div>
 
           <ul id='masonry' className='row'>
@@ -154,4 +156,4 @@ const Menu = () => {
   )
 }
 
-export default Menu
+export default MenuStyle4

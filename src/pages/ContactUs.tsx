@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
-import { IMAGES } from '../constent/theme'
+import { IMAGES } from '../constants/theme'
 import CommonBanner from '../elements/CommonBanner'
-import { ContactUsArr } from '../elements/JsonData'
+import { ContactUsArr } from '../../public/JsonData'
 
 const ContactUs = () => {
   const [active, setActive] = useState<number>(1)

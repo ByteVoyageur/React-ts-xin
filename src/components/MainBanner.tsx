@@ -1,10 +1,10 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { MainBanner2Arr } from '../elements/JsonData'
+import { MainBanner2Arr } from '../../public/JsonData'
 import { Parallax, Pagination } from 'swiper/modules'
 import { Link } from 'react-router-dom'
 
-const MainBanner2 = () => {
+const MainBanner = () => {
   const pagination = {
     clickable: true,
     el: '.main-swiper3-pagination',
@@ -71,10 +71,10 @@ const MainBanner2 = () => {
                             <span>Book Link Table</span>
                           </Link>
                           <Link
-                            to='/about-us'
+                            to='/menu'
                             className='btn btn-outline-primary btn-md shadow-primary btn-hover-1'
                           >
-                            <span>View More</span>
+                            <span>Notre Menu</span>
                           </Link>
                         </div>
                         <div className='food-card'>
@@ -148,4 +148,4 @@ const MainBanner2 = () => {
   )
 }
 
-export default MainBanner2
+export default MainBanner
