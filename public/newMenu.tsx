@@ -1,7 +1,7 @@
 import React from 'react'
 import { IMAGES } from '../src/constants/theme'
 
-export const MenuStyle4Arr = [
+export const MenuOne = [
   {
     categery: 'ALL PIZZA SPICY',
     img: IMAGES.menu_small_pic1,

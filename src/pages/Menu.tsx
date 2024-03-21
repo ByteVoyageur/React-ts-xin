@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { IMAGES } from '../constants/theme'
 import CommonBanner from '../elements/CommonBanner'
 import { useContext, useRef, useState } from 'react'
-import { MenuStyle4Arr } from '../../public/JsonData'
+import { MenuOne } from '../../public/newMenu'
 import OurMenuFilter from '../elements/OurMenuFilter'
 import { Context } from '../context/AppContext'
 
@@ -27,7 +27,7 @@ interface MenuFile {
 const MenuStyle4 = () => {
   const [active, setActive] = useState<number>(0)
   const [hoverActive, setHoverActive] = useState<number>()
-  const [data, setData] = useState<MenuFile[]>(MenuStyle4Arr)
+  const [data, setData] = useState<MenuFile[]>(MenuOne)
   const cardRef = useRef<HTMLLIElement[]>([])
   const { setShowCategeryFilter } = useContext(Context)
   const filterGallery = (name: string) => {
@@ -38,7 +38,7 @@ const MenuStyle4 = () => {
         }
       })
 
-      const updateItems = MenuStyle4Arr.filter((el: MenuFile) =>
+      const updateItems = MenuOne.filter((el: MenuFile) =>
         el.categery.includes(name)
       )
 
